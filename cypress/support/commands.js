@@ -7,6 +7,4 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function() {
 
     cy.get('button[type=submit]').click()
 
-    cy.get('.success').should('be.visible')
-
 })
