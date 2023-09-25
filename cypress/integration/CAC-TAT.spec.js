@@ -102,8 +102,8 @@
             cy.get('.error').should('be.visible')
         })
 
-        it('envia o formuário com sucesso usando um comando customizado', function(){ 
-            
+        it.only('envia o formuário com sucesso usando um comando customizado', function(){ 
+            cy.fillMandatoryFieldsAndSubmit()
 
         })
     })
